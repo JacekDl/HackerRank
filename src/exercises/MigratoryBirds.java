@@ -1,0 +1,42 @@
+package exercises;
+
+import java.util.*;
+
+public class MigratoryBirds {
+
+	 static int migratoryBirds(List<Integer> arr) {
+	        int[] types = new int[5];
+	        for(int i : arr) types[i-1]++;
+
+	        int max = 0;
+	        int answer = 0;
+	        for(int j = 0; j < 5; j++){
+	            if(types[j] > max){
+	                max = types[j];
+	                answer = j+1;
+	            }
+	        }
+	        return answer;
+	    }
+	
+	public static void main(String[] args) {
+		List<Integer> arr = new ArrayList<Integer>();//{1,2,3,4,5,4,3,2,1,3,4};
+		arr.add(1);
+		arr.add(2);
+		arr.add(3);
+		arr.add(4);
+		arr.add(5);
+		arr.add(4);
+		arr.add(3);
+		arr.add(3);
+		arr.add(1);
+		arr.add(5);
+		arr.add(5);
+
+		
+		System.out.println(migratoryBirds(arr));
+		
+		
+	}
+
+}
