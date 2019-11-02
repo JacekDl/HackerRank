@@ -2,6 +2,8 @@ package exercises;
 
 import java.util.*;
 
+// https://www.hackerrank.com/challenges/the-birthday-bar/problem
+// class name = name of the problem
 public class BirthdayChocolate {
 
 	private static int birthday(List<Integer> s, int d, int m) {	//m = lenght of subarray	d = sum of subarray elements
@@ -20,30 +22,11 @@ public class BirthdayChocolate {
 		while(end < s.size()) {
 			sum = sum - s.get(begin) + s.get(end);
 			if(sum == d) answer++;
-			/*int sum = 0;
-			
-			for(int i = begin; i <= end; i++) {
-				sum = sum + s.get(i);
-			}
-			if(sum == d) answer++;*/
 			begin++;
 			end++;
 		}
-		/*int answer = 0;
-		int end;
-		if(m == 1) end = s.size();
-		else end = s.size() - m;
-		
-		for(int i = 0; i < end; i++) {
-			int sum = 0;
-			for(int j = 0; j < m; j++) {
-				sum = sum + s.get(i + j);
-			}
-			if(sum == d) answer++;
-		}*/
 		return answer;
 	}
-	
 	
 	public static void main(String[] args) {
 		List<Integer> s1 = new ArrayList<Integer>();
@@ -75,7 +58,6 @@ public class BirthdayChocolate {
 		int m3 = 1;
 		value = birthday(s3, d3, m3);
 		System.out.println(value);
-		
 	}
 
 	
