@@ -33,8 +33,6 @@ public class JavaExceptionHandling {
     	catch(ArithmeticException e) {
     		System.out.println(e);
     	}
-    	
-    	
     }
 }
 
