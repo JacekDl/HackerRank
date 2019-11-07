@@ -1,6 +1,8 @@
 package exercises;
 
 import java.util.*;
+
+//https://www.hackerrank.com/challenges/java-iterator/problem
 public class JavaIterator{
 
 	static Iterator func(ArrayList mylist){		//returns Iterator
