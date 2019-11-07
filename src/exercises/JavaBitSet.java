@@ -36,27 +36,22 @@ public class JavaBitSet {
         	int ins2 = sc.nextInt();
         	
         	if(instruction.compareTo("AND") == 0) {
-        		System.out.print("After AND: ");
         		if(ins1 == 1) b1.and(b2);
         		else if(ins1 == 2) b2.and(b1);
         		
         	}else if(instruction.compareTo("OR") == 0) {
-        		System.out.print("After OR: ");
         		if(ins1 == 1) b1.or(b2);
         		else if(ins1 == 2) b2.or(b1);
         		
         	}else if(instruction.compareTo("XOR") == 0) {
-        		System.out.print("After XOR: ");
         		if(ins1 == 1) b1.xor(b2);
         		else if(ins1 == 2) b2.xor(b1);
         		
         	}else if(instruction.compareTo("FLIP") == 0) {
-        		System.out.print("After FLIP: ");
         		if(ins1 == 1) b1.flip(ins2);
         		else if(ins1 == 2) b2.flip(ins2);
         		
         	}else if(instruction.compareTo("SET") == 0) {
-        		System.out.print("After SET: ");
         		if(ins1 == 1) b1.set(ins2); 
         		else if(ins1 == 2) b2.set(ins2);
         	}
