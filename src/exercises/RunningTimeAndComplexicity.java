@@ -2,6 +2,7 @@ package exercises;
 
 import java.util.Scanner;
 
+//https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem
 public class RunningTimeAndComplexicity {
 	
 	private static String isPrime(int value) {
@@ -19,16 +20,6 @@ public class RunningTimeAndComplexicity {
 	}
 	
 	public static void main(String[] args) {
-		/*Scanner sc = new Scanner(System.in);
-		int numberOfTests = sc.nextInt();
-		Integer[] intArray = new Integer[numberOfTests];
-		for(int i = 0; i < numberOfTests; i ++) {
-			intArray[i] = sc.nextInt();
-		}
-		
-		for(int i : intArray) {
-			System.out.println(isPrime(i));
-		}*/
 		System.out.println(isPrime(1));
 	}
 

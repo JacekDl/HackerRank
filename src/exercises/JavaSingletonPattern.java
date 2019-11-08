@@ -16,6 +16,6 @@ class Singleton{
 
 public class JavaSingletonPattern {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 	}
 }

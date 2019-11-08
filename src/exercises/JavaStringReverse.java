@@ -1,5 +1,6 @@
 package exercises;
 
+//https://www.hackerrank.com/challenges/java-string-reverse/problem
 public class JavaStringReverse {
 
 	public static void main(String[] args) {
@@ -10,8 +11,5 @@ public class JavaStringReverse {
 			if(A.charAt(i) != A.charAt(A.length() - 1 - i)) isPalindrome = "No";
 		}
 		System.out.println(isPalindrome);
-		
-
 	}
-
 }

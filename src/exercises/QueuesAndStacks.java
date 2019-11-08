@@ -2,8 +2,8 @@ package exercises;
 
 import java.util.*;
 
+//https://www.hackerrank.com/challenges/30-queues-stacks/problem
 public class QueuesAndStacks {
-    // Write your code here.
 	ArrayDeque<Character> queue = new ArrayDeque<>();
 	ArrayDeque<Character> stack = new ArrayDeque<>();
 	
@@ -25,13 +25,9 @@ public class QueuesAndStacks {
 		return c;
 	}
 
-	
-	
-
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         String input = "ola";
         
-
         // Convert input String to an array of characters:
         char[] s = input.toCharArray();
 
@@ -43,11 +39,6 @@ public class QueuesAndStacks {
             p.pushCharacter(c);
             p.enqueueCharacter(c);
         }
-        
-        /*for(char c : queue) System.out.print(c + " ");
-        System.out.println();
-        for(char c : stack) System.out.print(c + " ");
-        System.out.println();*/
 
         // Pop/Dequeue the chars at the head of both data structures and compare them:
         boolean isPalindrome = true;

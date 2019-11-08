@@ -12,10 +12,11 @@ class Node{
         left=right=null;
     }
 }
+
+//https://www.hackerrank.com/challenges/30-binary-trees/problem
 class BSTLevelOrderTraversal{
 
 static void levelOrder(Node root){
-      //Write your code here
 	ArrayDeque<Node> queue = new ArrayDeque<>();
 	if(root != null) {
 		queue.add(root);
@@ -51,10 +52,7 @@ static void levelOrder(Node root){
             root = insert(root, 3);
             root = insert(root, 7);
             root = insert(root, 4);
-            /*while(T-->0){
-                int data=sc.nextInt();
-                root=insert(root,data);
-            }*/
+     
             levelOrder(root);
         }	
 }

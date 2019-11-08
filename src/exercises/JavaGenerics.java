@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 
 class ArrayPrinter{
-   //Write your code here
     static <T> void printArray(T[] array){
         for(T element : array){
             System.out.println(element);
@@ -13,6 +12,7 @@ class ArrayPrinter{
     }
 }
 
+//https://www.hackerrank.com/challenges/java-generics/problem
 public class JavaGenerics {
     public static void main(String args[]) {
         ArrayPrinter myPrinter = new ArrayPrinter();

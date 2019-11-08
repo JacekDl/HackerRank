@@ -1,9 +1,10 @@
 package exercises;
 
-//Complete this code or write your own from scratch
+
 import java.util.*;
 import java.io.*;
 
+//https://www.hackerrank.com/challenges/phone-book/problem
 class JavaMap{
 	public static void main(String []argh)
 	{

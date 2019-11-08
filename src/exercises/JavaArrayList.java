@@ -4,6 +4,7 @@ import java.io.*;
 import java.nio.file.Paths;
 import java.util.*;
 
+//https://www.hackerrank.com/challenges/java-arraylist/problem
 public class JavaArrayList {
 
 	public static void main(String[] args) throws IOException {
@@ -26,17 +27,6 @@ public class JavaArrayList {
 			}
 		}
 		
-		/*for(ArrayList<Integer> subArray: myArray) {							/////PRINT WHOLE ARRAY OF ARRAYS
-			for(Integer element : subArray) System.out.print(element + " ");
-		}
-		
-		System.out.println();
-		
-		for(Integer element : myArray.get(0)) {									/////PRINT SINGLE ARRAY
-			System.out.print(element + " ");
-		}*/
-		
-		
 		int numberOfQueries = sc.nextInt();
 		int x;
 		int y;
@@ -53,8 +43,6 @@ public class JavaArrayList {
 				System.out.println("ERROR!");
 			}
 		}
-		
 		sc.close();
 	}
-
 }

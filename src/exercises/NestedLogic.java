@@ -1,9 +1,9 @@
 package exercises;
 
+//https://www.hackerrank.com/challenges/linkedin-practice-nested-logic/problem
 public class NestedLogic {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int Da = 9;
 		int Ma = 6;
 		int Ya = 2015;
@@ -22,9 +22,6 @@ public class NestedLogic {
 				else fine = (Da - De) * 15; 
 			}
 		}
-		
 		System.out.println(fine);
-
 	}
-
 }

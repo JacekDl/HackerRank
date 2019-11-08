@@ -8,6 +8,8 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
+
+//https://www.hackerrank.com/challenges/java-primality-test/problem
 public class JavaPrimalityTest {
 
     private static final Scanner scanner = new Scanner(System.in);

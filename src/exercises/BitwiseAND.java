@@ -1,11 +1,9 @@
 package exercises;
 
+//https://www.hackerrank.com/challenges/linkedin-practice-bitwise-and/problem
 public class BitwiseAND {
 
 	public static void main(String[] args) {
-		/*int a = 1;
-		int b = 4;
-		System.out.println(a&b);*/
 		
 		int n = 2;
 		int k = 2;
@@ -13,8 +11,7 @@ public class BitwiseAND {
 		int[] s = new int[n];
 		
 		for(int i = 0; i < n; i++) {
-			s[i] = numberToInsert++;
-			//System.out.print(s[i] + " ");			//OK
+			s[i] = numberToInsert++;	
 		}
 		
 		int max = 0;

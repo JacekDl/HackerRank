@@ -6,12 +6,10 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-
 //https://www.hackerrank.com/challenges/java-hashset/problem
-
 public class JavaHashSet {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int t = s.nextInt();
         String[] pair_left = new String[t];
@@ -22,12 +20,11 @@ public static void main(String[] args) {
             pair_right[i] = s.next();
         }
 
-//Write your code here
         HashSet<String> mySet = new HashSet<String>();	
         for(int i = 0; i < t; i++) {
-        	String name = pair_left[i] + " " + pair_right[i];	//concatenate strings
-        	mySet.add(name);	//add newly created string to hashset
-        	System.out.println(mySet.size());	//print no. of elements currently hold in hashset
+        	String name = pair_left[i] + " " + pair_right[i];		//concatenate strings
+        	mySet.add(name);										//add newly created string to hashset
+        	System.out.println(mySet.size());						//print no. of elements currently hold in hashset
         }
         
         

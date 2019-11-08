@@ -24,7 +24,7 @@ class Student{
 }
 
 //https://www.hackerrank.com/challenges/java-sort/problem
-//Complete the code
+
 public class JavaSort
 {
 	public static void main(String[] args){

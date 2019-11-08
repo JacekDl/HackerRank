@@ -5,7 +5,6 @@ interface AdvancedArithmetic{
   int divisor_sum(int n);
 }
 
-//Write your code here
 class MyCalculator implements AdvancedArithmetic{
     public int divisor_sum(int n){
         int answer = 0;
@@ -15,7 +14,6 @@ class MyCalculator implements AdvancedArithmetic{
     	return answer;
     }
 }
-
 
 //https://www.hackerrank.com/challenges/java-interface/problem
 class JavaInterface{
@@ -28,9 +26,7 @@ class JavaInterface{
         System.out.print(my_calculator.divisor_sum(n) + "\n");
       	sc.close();
     }
-    /*
-     *  ImplementedInterfaceNames method takes an object and prints the name of the interfaces it implemented
-     */
+    
     static void ImplementedInterfaceNames(Object o){
         Class[] theInterfaces = o.getClass().getInterfaces();
         for (int i = 0; i < theInterfaces.length; i++){

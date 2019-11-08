@@ -2,6 +2,7 @@ package exercises;
 
 import java.util.*;
 
+//https://www.hackerrank.com/challenges/migratory-birds/problem
 public class MigratoryBirds {
 
 	 static int migratoryBirds(List<Integer> arr) {
@@ -33,10 +34,7 @@ public class MigratoryBirds {
 		arr.add(5);
 		arr.add(5);
 
-		
 		System.out.println(migratoryBirds(arr));
-		
-		
 	}
 
 }

@@ -1,6 +1,7 @@
 package exercises;
 
 //https://www.hackerrank.com/challenges/simple-addition-varargs/problem
+
 public class JavaVarargs {
 
     public static void main(String[] args) {

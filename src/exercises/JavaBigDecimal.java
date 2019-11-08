@@ -3,10 +3,11 @@ package exercises;
 import java.math.BigDecimal;
 import java.util.*;
 
+//https://www.hackerrank.com/challenges/java-bigdecimal/problem
 class JavaBigDecimal{
 
     public static void main(String []args){
-        //Input
+        
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         String[] s = new String[n + 2];
@@ -19,9 +20,6 @@ class JavaBigDecimal{
             System.out.print(s[i] + " ");
         }
       	System.out.println();
-      	
-        //Write your code here
-      	
       	
 	    for(int k = 0; k < n - 1; k++) {
 	      	boolean sorted = true;
@@ -45,7 +43,6 @@ class JavaBigDecimal{
 	      	if(sorted == true) break;
 	    }
       	
-        //Output
         for(int i = 0; i < n; i++){
             System.out.print(s[i] + " ");
         }

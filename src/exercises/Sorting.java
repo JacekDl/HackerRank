@@ -6,6 +6,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
+//not sure about the name of the problem
 public class Sorting {
 
 	public static void main(String[] args) {
@@ -24,7 +25,6 @@ public class Sorting {
                     extra = a[j+1];
                     a[j+1] = a[j];
                     a[j] = extra;
-                    //swap(a[j], a[j + 1]);
                     numberOfSwaps++;
                     numSwaps++;
                 }

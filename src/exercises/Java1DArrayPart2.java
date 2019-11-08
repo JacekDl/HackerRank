@@ -6,7 +6,6 @@ import java.util.*;
 public class Java1DArrayPart2 {
 
     public static boolean canWin(int leap, int[] game) {
-        // Return true if you can win the game; otherwise, return false.
     	Integer current = 0;
     	ArrayDeque<Integer> queue = new ArrayDeque<Integer>();
     	ArrayList<Integer> arraylist = new ArrayList<Integer>();

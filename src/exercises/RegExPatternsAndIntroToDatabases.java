@@ -8,25 +8,16 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
+
+//https://www.hackerrank.com/challenges/30-regex-patterns/problem
 public class RegExPatternsAndIntroToDatabases {
 
-	public static final String regularExpression = "[a-z.]+@gmail.com"; //"[a-z/.]?@gmail.com"; //"[A-Za-z]{1}[A-Za-z0-9_]{7,29}";
-
-    //private static final Scanner scanner = new Scanner(System.in);
+	public static final String regularExpression = "[a-z.]+@gmail.com";
 
     public static void main(String[] args) {
-        /*int N = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-        for (int NItr = 0; NItr < N; NItr++) {
-            String[] firstNameEmailID = scanner.nextLine().split(" ");
-            String firstName = firstNameEmailID[0];
-            String emailID = firstNameEmailID[1];
-        }
-        scanner.close();*/
     	
     	List<String> firstNames = new ArrayList<String>();
     	
-    	//String[] input = {"riya riya@gmail.com", "jacek jacek@gmail.co.uk", "julia julia@julia.me", "julia sjulia@gmail.com", "julia julia@gmail.com", "samantha samantha@gmail.com", "tanya tanya@gmail.com"};
     	String[] input = new String[30];
     	input[0] = "riya riya@gmail.com";
     	input[1] = "julia julia@julia.me";
@@ -61,10 +52,6 @@ public class RegExPatternsAndIntroToDatabases {
     	
     	for(String line : input) {
     		String[] splitLine = line.split(" ");
-    		//System.out.println(splitLine[0]);					//OK
-    		//System.out.println(splitLine[1]);					//OK
-    		
-    		//firstNames.add(splitLine[0]); 					//OK
     		
     		if(splitLine[1].matches(regularExpression)) {
         		firstNames.add(splitLine[0]);

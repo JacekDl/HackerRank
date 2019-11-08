@@ -1,5 +1,6 @@
 package exercises;
 
+//https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem
 public class BreakingTheRecords {
 
 	public static void main(String[] args) {

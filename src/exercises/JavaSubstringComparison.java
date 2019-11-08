@@ -1,5 +1,6 @@
 package exercises;
 
+//https://www.hackerrank.com/challenges/java-string-compare/problem
 public class JavaSubstringComparison {
 
 	public static void main(String[] args) {
@@ -8,7 +9,6 @@ public class JavaSubstringComparison {
 		
 		int begin = s.length() - k;
 		System.out.println("begin = " + begin);
-		
 		
 		String min = s.substring(begin);
 		String max = min;
@@ -30,7 +30,5 @@ public class JavaSubstringComparison {
 		
 		System.out.println("MIN: " + min);
 		System.out.println("MAX: " + max);
-
 	}
-
 }

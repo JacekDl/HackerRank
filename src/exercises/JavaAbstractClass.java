@@ -9,15 +9,14 @@ abstract class Book{
 	}
 }
 
-//Write MyBook class here
 class MyBook extends Book{
-
 	@Override
 	void setTitle(String s) {
 		this.title = s;
 	}
 }
 
+//https://www.hackerrank.com/challenges/java-abstract-class/problem
 public class JavaAbstractClass{
 	
 	public static void main(String []args){

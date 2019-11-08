@@ -1,13 +1,11 @@
 package exercises;
 
+//https://www.hackerrank.com/challenges/java-strings-introduction/problem
 public class JavaStringsIntroduction {
 
 public static void main(String[] args) {
-        
-        
         String A = "hello";
         String B = "java";
-        /* Enter your code here. Print output to STDOUT. */
         
         System.out.println(A.length()+ B.length());
         int answer = A.compareTo(B);

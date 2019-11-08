@@ -13,10 +13,10 @@ class LLNode{
 	}	
 }
 
+//https://www.hackerrank.com/challenges/30-linked-list-deletion/problem
 public class MoreLinkedList{
 
 	public static LLNode removeDuplicates(LLNode head) {
-		//Write your code here
 		LLNode current = head;
 		while(current.next != null) {
 			while(current.data == current.next.data) {
@@ -55,7 +55,6 @@ public class MoreLinkedList{
 	
 	public static void main(String args[]){
 		LLNode head = null;
-		//System.out.println("Hello");
 		head = insert(head, 1);
 		head = insert(head, 1);
 		head = insert(head, 1);
