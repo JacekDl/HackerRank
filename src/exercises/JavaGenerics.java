@@ -18,6 +18,8 @@ public class JavaGenerics {
         ArrayPrinter myPrinter = new ArrayPrinter();
         Integer[] intArray = { 1, 2, 3 };
         String[] stringArray = {"Hello", "World"};
+        
+        //TODO Jacek - printArray(...) should be invoked like static method
         myPrinter.printArray(intArray);
         myPrinter.printArray(stringArray);
         int count = 0;

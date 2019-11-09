@@ -20,6 +20,7 @@ public class JavaHashSet {
             pair_right[i] = s.next();
         }
 
+        //TODO Jacek initialize with interface
         HashSet<String> mySet = new HashSet<String>();	
         for(int i = 0; i < t; i++) {
         	String name = pair_left[i] + " " + pair_right[i];		//concatenate strings

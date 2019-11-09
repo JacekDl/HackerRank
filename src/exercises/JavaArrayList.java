@@ -11,6 +11,8 @@ public class JavaArrayList {
 		Scanner sc = new Scanner(System.in);
 		int arrayLength = sc.nextInt();
 		
+		//TODO Jacek always initialize with interface, whenever possible
+		//List<List<Integer>> mrArray = ...
 		ArrayList<ArrayList<Integer>> myArray = new ArrayList<ArrayList<Integer>>();
 		for(int i = 0; i < arrayLength; i++) {
 			ArrayList<Integer> subArray = new ArrayList<Integer>();

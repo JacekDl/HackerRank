@@ -49,6 +49,8 @@ public class JavaFactoryPattern {
 		}
 	}
 }
+
+//TODO Jacek - class name does not match Java naming conventions
 class Do_Not_Terminate{
 		 
 	public static class ExitTrappedException extends SecurityException{

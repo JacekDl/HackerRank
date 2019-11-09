@@ -6,6 +6,8 @@ import java.util.*;
 // class name = name of the problem
 public class BirthdayChocolate {
 
+	
+	//TODO Jacek - naming of parameters
 	private static int birthday(List<Integer> s, int d, int m) {	//m = lenght of subarray	d = sum of subarray elements
 		int answer = 0;
 		int begin = 0;

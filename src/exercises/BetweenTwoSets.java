@@ -7,10 +7,15 @@ import java.util.List;
 //	class name = name of problem
 public class BetweenTwoSets {
 
+	//TODO Jacek naming conventions - at least l1, l2, or list1, list2. a or a tells you nothing.
 	private static int getTotal(List<Integer> a, List<Integer> b) {
 		int answer = 0;
 		
 		int aMax = 0;
+		
+		//TODO Jacek - in Java please always use {...} after if/else/for/... statements, even if there is only one line. Same for all files/occurrences in repository.
+		
+		//TODO Jacek - what will happen (conversion Integer -> int), if a or b contains null and you iterate like for(int i : a)? (not the case in this exercise, but general note)
 		for(int i : a) if(i > aMax) aMax = i;
 			
 		int bMin = 100;
@@ -30,6 +35,10 @@ public class BetweenTwoSets {
 	} 
 	
 	public static void main(String[] args) {
+		
+		//TODO Jacek - another useful library to use: Google Guava
+		// using it, you can e.g. initialize list in singe line like
+		// Lists<Integer> = Lists.newArrayList(3,4) - add .jar or like in Maven/Gradle project
 		List<Integer> a = new ArrayList<Integer>();
 		a.add(3);
 		a.add(4);

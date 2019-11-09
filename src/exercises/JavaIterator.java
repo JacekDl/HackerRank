@@ -16,6 +16,8 @@ public class JavaIterator{
 	
    @SuppressWarnings({ "unchecked" })
    public static void main(String []args){
+	   
+	   //TODO Jacek always put there a type. Raw types are kind of dangerous and makes problems. Read about generics - probably Java 5(?) features.
 	   ArrayList mylist = new ArrayList();
 	   Scanner sc = new Scanner(System.in);
 	   int n = sc.nextInt();

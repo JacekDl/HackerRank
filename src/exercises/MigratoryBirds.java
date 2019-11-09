@@ -21,6 +21,8 @@ public class MigratoryBirds {
 	    }
 	
 	public static void main(String[] args) {
+		
+		//TODO Jacek - Google Guava jar
 		List<Integer> arr = new ArrayList<Integer>();//{1,2,3,4,5,4,3,2,1,3,4};
 		arr.add(1);
 		arr.add(2);

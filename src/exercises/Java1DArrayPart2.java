@@ -33,6 +33,8 @@ public class Java1DArrayPart2 {
     }
 
     private static boolean canJump(Integer current, int[] game, int leap) {
+    	
+    	//TODO Jacek: much simpler: ' return game[current + leap] == 0' - alway do it this way when possible
 		if(game[current + leap] == 0) return true;
 		else return false;
 	}

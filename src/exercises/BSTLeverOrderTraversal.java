@@ -3,7 +3,7 @@ package exercises;
 import java.util.*;
 import java.io.*;
 
-
+//TODO Jacek - I would rather put it in a separate file/package, or make this class private/static
 class Node{
     Node left,right;
     int data;

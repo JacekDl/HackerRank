@@ -27,6 +27,7 @@ class JavaInterface{
       	sc.close();
     }
     
+    //TODO Jacek - Java naming conventions
     static void ImplementedInterfaceNames(Object o){
         Class[] theInterfaces = o.getClass().getInterfaces();
         for (int i = 0; i < theInterfaces.length; i++){
