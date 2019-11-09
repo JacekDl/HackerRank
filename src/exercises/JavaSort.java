@@ -24,7 +24,6 @@ class Student{
 }
 
 //https://www.hackerrank.com/challenges/java-sort/problem
-
 public class JavaSort
 {
 	public static void main(String[] args){
@@ -43,8 +42,7 @@ public class JavaSort
 			testCases--;
 		}
 		
-		studentList.sort(Comparator.comparingDouble(Student::getCgpa).reversed()); //TODO: complete the exercise
-		
+		studentList.sort(Comparator.comparingDouble(Student::getCgpa).reversed().thenComparing(Student::getFname).thenComparingInt(Student::getId)); //TODO: complete the exercise	
 		
       	for(Student st: studentList){
 			System.out.println(st.getFname());
