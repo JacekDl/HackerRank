@@ -11,10 +11,10 @@ public class JavaBigInteger {
 	
 	public static void main(String[] args) {
 		
-		BigInteger a = new BigInteger("1234");
-		BigInteger b = new BigInteger("20");
+		BigInteger firstInt = new BigInteger("1234");
+		BigInteger secondInt = new BigInteger("20");
 		
-		System.out.println(a.add(b));
-		System.out.println(a.multiply(b));
+		System.out.println(firstInt.add(secondInt));
+		System.out.println(firstInt.multiply(secondInt));
     }
 }
