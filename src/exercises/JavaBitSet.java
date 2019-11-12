@@ -13,38 +13,58 @@ public class JavaBitSet {
 	
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
-       int n = sc.nextInt();
-       int m = sc.nextInt();
+       int sizeOfSet = sc.nextInt();
+       int numberOfQueries = sc.nextInt();
         
-       BitSet b1 = new BitSet(n);
-       BitSet b2 = new BitSet(n);
+       BitSet firstSet = new BitSet(sizeOfSet);
+       BitSet secondSet = new BitSet(sizeOfSet);
         
-       while(m-- > 0) {
-        	String instruction = sc.next();
-        	int ins1 = sc.nextInt();
-        	int ins2 = sc.nextInt();
+       while(numberOfQueries-- > 0) {
+        	String typeOfQuery = sc.next();
+        	int instr1 = sc.nextInt();
+        	int instr2 = sc.nextInt();
         	
-        	if(instruction.compareTo("AND") == 0) {
-        		if(ins1 == 1) b1.and(b2);
-        		else if(ins1 == 2) b2.and(b1);
+        	if(typeOfQuery.compareTo("AND") == 0) {
+        		if(instr1 == 1) {
+        			firstSet.and(secondSet);
+        		}
+        		else if(instr1 == 2) {
+        			secondSet.and(firstSet);
+        		}
         		
-        	}else if(instruction.compareTo("OR") == 0) {
-        		if(ins1 == 1) b1.or(b2);
-        		else if(ins1 == 2) b2.or(b1);
+        	}else if(typeOfQuery.compareTo("OR") == 0) {
+        		if(instr1 == 1) {
+        			firstSet.or(secondSet);
+        		}
+        		else if(instr1 == 2) {
+        			secondSet.or(firstSet);
+        		}
         		
-        	}else if(instruction.compareTo("XOR") == 0) {
-        		if(ins1 == 1) b1.xor(b2);
-        		else if(ins1 == 2) b2.xor(b1);
+        	}else if(typeOfQuery.compareTo("XOR") == 0) {
+        		if(instr1 == 1) {
+        			firstSet.xor(secondSet);
+        		}
+        		else if(instr1 == 2) {
+        			secondSet.xor(firstSet);
+        		}
         		
-        	}else if(instruction.compareTo("FLIP") == 0) {
-        		if(ins1 == 1) b1.flip(ins2);
-        		else if(ins1 == 2) b2.flip(ins2);
+        	}else if(typeOfQuery.compareTo("FLIP") == 0) {
+        		if(instr1 == 1) {
+        			firstSet.flip(instr2);
+        		}
+        		else if(instr1 == 2) {
+        			secondSet.flip(instr2);
+        		}
         		
-        	}else if(instruction.compareTo("SET") == 0) {
-        		if(ins1 == 1) b1.set(ins2); 
-        		else if(ins1 == 2) b2.set(ins2);
+        	}else if(typeOfQuery.compareTo("SET") == 0) {
+        		if(instr1 == 1) {
+        			firstSet.set(instr2); 
+        		}
+        		else if(instr1 == 2) {
+        			secondSet.set(instr2);
+        		}
         	}
-        	System.out.println(b1.cardinality() + " " + b2.cardinality());
+        	System.out.println(firstSet.cardinality() + " " + secondSet.cardinality());
         }
        sc.close();
     }
