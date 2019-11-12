@@ -12,18 +12,17 @@ public class BreakingTheRecords {
 		for(int i : scores) {
 			if(i > max) {
 				max = i;
-				count[0]++;
+				count[0]++;		//counts number of changes to max value
 			}
 			if(i < min) {
 				min = i;
-				count[1]++;
+				count[1]++;		//counts number of changes to min value
 			}
 		}
 		
-		for(int i : count) System.out.print(i + " ");
-		
-		
-
+		for(int i : count) {
+			System.out.print(i + " ");
+		}
 	}
-
+	
 }
