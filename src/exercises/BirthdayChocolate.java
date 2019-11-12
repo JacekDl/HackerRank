@@ -7,23 +7,23 @@ import java.util.*;
 public class BirthdayChocolate {
 
 	
-	//TODO Jacek - naming of parameters
-	private static int birthday(List<Integer> s, int d, int m) {	//m = lenght of subarray	d = sum of subarray elements
+	//TODO Jacek - naming of parameters --> DONE
+	private static int birthday(List<Integer> chocolateArray, int sumOfSubarrayElem, int subarrayLength) {	//m = lenght of subarray	d = sum of subarray elements
 		int answer = 0;
 		int begin = 0;
-		int end = begin + (m - 1);
+		int end = begin + (subarrayLength - 1);
 		
 		int sum = 0;
 		for(int i = begin; i <= end; i++) {
-			sum = sum + s.get(i);
+			sum = sum + chocolateArray.get(i);
 		}
-		if(sum == d) answer++;
+		if(sum == sumOfSubarrayElem) answer++;
 		begin++;
 		end++;
 		
-		while(end < s.size()) {
-			sum = sum - s.get(begin) + s.get(end);
-			if(sum == d) answer++;
+		while(end < chocolateArray.size()) {
+			sum = sum - chocolateArray.get(begin) + chocolateArray.get(end);
+			if(sum == sumOfSubarrayElem) answer++;
 			begin++;
 			end++;
 		}
@@ -61,7 +61,4 @@ public class BirthdayChocolate {
 		value = birthday(s3, d3, m3);
 		System.out.println(value);
 	}
-
-	
-
 }
