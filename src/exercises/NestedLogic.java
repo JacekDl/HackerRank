@@ -4,24 +4,41 @@ package exercises;
 public class NestedLogic {
 
 	public static void main(String[] args) {
-		int Da = 9;
-		int Ma = 6;
-		int Ya = 2015;
-		int De = 6;
-		int Me = 6;
-		int Ye = 2015;
+		int currentDay = 9;
+		int currentMonth = 6;
+		int currentYear = 2015;
+		int expectedDay = 6;
+		int expectedMonth = 6;
+		int expectedYear = 2015;
 		
 		int fine = 0;
-		if(Ya < Ye) fine = 0;
-		else if (Ya > Ye) fine = 10000;
+		
+		//compare years
+		if(currentYear < expectedYear) {
+			fine = 0;
+		}
+		else if (currentYear > expectedYear) {
+			fine = 10000;
+		}
 		else {
-			if(Ma < Me) fine = 0;
-			else if (Ma > Me) fine = (Ma - Me)*500;
+			//compare months
+			if(currentMonth < expectedMonth) {
+				fine = 0;
+			}
+			else if (currentMonth > expectedMonth) {
+				fine = (currentMonth - expectedMonth)*500;
+			}
 			else {
-				if(Da <= De) fine = 0;
-				else fine = (Da - De) * 15; 
+				//compare days
+				if(currentDay <= expectedDay) {
+					fine = 0;
+				}
+				else {
+					fine = (currentDay - expectedDay) * 15; 
+				}
 			}
 		}
+		
 		System.out.println(fine);
 	}
 }
