@@ -4,8 +4,8 @@ import java.util.*;
 
 //https://www.hackerrank.com/challenges/30-queues-stacks/problem
 public class QueuesAndStacks {
-	ArrayDeque<Character> queue = new ArrayDeque<>();
-	ArrayDeque<Character> stack = new ArrayDeque<>();
+	Deque<Character> queue = new ArrayDeque<>();
+	Deque<Character> stack = new ArrayDeque<>();
 	
 	private void enqueueCharacter(char c) {
 		queue.add(c);
