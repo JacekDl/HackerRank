@@ -7,7 +7,9 @@ import java.util.*;
 class Printer <T> {
 	
 	public void printArray(T[] obj) {
-		for(T value : obj) System.out.println(value);
+		for(T value : obj) {
+			System.out.println(value);
+		}
 	}
 }
 
