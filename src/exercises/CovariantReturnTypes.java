@@ -30,23 +30,20 @@ class Lily extends Flower{
 
 class Region {
 	Flower yourNationalFlower() {
-		Flower flower = new Flower();
-		//TODO Jacek simply: return new Flower();
-		return flower;
+		//TODO Jacek simply: return new Flower(); --> DONE
+		return new Flower();
 	}
 }
 
 class WestBengal extends Region{
 	Jasmine yourNationalFlower() {
-		Jasmine jasmine = new Jasmine();
-		return jasmine;
+		return new Jasmine();
 	}
 }
 
 class AndhraPradesh extends Region{
 	Lily yourNationalFlower() {
-		Lily lily = new Lily();
-		return lily;
+		return new Lily();
 	}
 }
 
@@ -59,7 +56,7 @@ public class CovariantReturnTypes {
 		
 		//TODO Jacek
 		// try to play with:
-		// List<Flower> l = Lists.newArrayList(new Jasmine(), new Lilly());
+		// List<Flower> l = Lists.newArrayList(new Jasmine(), new Lily());
 		// l.foreach(f -> {f.whatYourName())}; - why it works?
 		// and why List<Jasmine> l2 = Lists.newArrayList(new Flower()) should not?
 
@@ -70,8 +67,12 @@ public class CovariantReturnTypes {
 			case "AndhraPradesh":
 				region = new AndhraPradesh();
 				break;
-		//TODO Jacek handle default: <...>
+				//TODO Jacek handle default: <...> --> DONE
+			default:
+				region = new Region();
+				break;
 		}
+		
 		Flower flower = region.yourNationalFlower();
 		System.out.println(flower.whatsYourName());
 	}
