@@ -1,7 +1,7 @@
 package exercises;
 
 class Arithmetic{
-    int add(int a, int b){
-        return a + b; 
+    int add(int firstInt, int secondInt){
+        return firstInt + secondInt; 
     }
 }
