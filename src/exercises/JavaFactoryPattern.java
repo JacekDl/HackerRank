@@ -23,8 +23,12 @@ class Cake implements Food{
 class FoodFactory {
 	public Food getFood(String order) {
 		Food food = null;
-		if(order.compareTo("cake") == 0) food = new Cake();
-		if(order.compareTo("pizza") == 0) food = new Pizza();
+		if(order.compareTo("cake") == 0) {
+			food = new Cake();
+		}
+		if(order.compareTo("pizza") == 0) {
+			food = new Pizza();
+		}
 		return food;
 	}//End of getFood method
 }//End of factory class
