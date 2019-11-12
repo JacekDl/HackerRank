@@ -2,26 +2,7 @@ package exercises;
 
 import java.util.*;
 
-class Student{
-	private int id;
-	private String fname;
-	private double cgpa;
-	public Student(int id, String fname, double cgpa) {
-		super();
-		this.id = id;
-		this.fname = fname;
-		this.cgpa = cgpa;
-	}
-	public int getId() {
-		return id;
-	}
-	public String getFname() {
-		return fname;
-	}
-	public double getCgpa() {
-		return cgpa;
-	}
-}
+
 
 //https://www.hackerrank.com/challenges/java-sort/problem
 public class JavaSort
@@ -42,7 +23,7 @@ public class JavaSort
 			testCases--;
 		}
 		
-		studentList.sort(Comparator.comparingDouble(Student::getCgpa).reversed().thenComparing(Student::getFname).thenComparingInt(Student::getId)); //TODO: complete the exercise	
+		studentList.sort(Comparator.comparingDouble(Student::getCgpa).reversed().thenComparing(Student::getFname).thenComparingInt(Student::getId)); //TODO: complete the exercise --> DONE	
 		
       	for(Student st: studentList){
 			System.out.println(st.getFname());
