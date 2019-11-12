@@ -6,10 +6,11 @@ import java.util.Scanner;
 public class RunningTimeAndComplexicity {
 	
 	private static String isPrime(int value) {
-		 
 		double sqrtValue = Math.sqrt(value);
 		String answer = "Prime";
-		if(value == 1) return answer;
+		if(value == 1) {
+			return answer;
+		}
 		for(int i = 2; i <= sqrtValue; i++) {
 			if(value % i == 0) {
 				answer = "Not prime";
