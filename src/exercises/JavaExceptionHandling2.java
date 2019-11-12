@@ -5,11 +5,13 @@ import java.util.Scanner;
 class MyCalculator2 {
 	 
 	public long power(int n, int p) throws Exception{
-		long answer = 0;
-		if(n < 0 || p < 0) throw new Exception("n or p should not be negative");
-		if(n == 0 && p == 0) throw new Exception("n and p should not be zero");
-		answer = (long) Math.pow(n, p);
-		return answer;
+		if(n < 0 || p < 0) {
+			throw new Exception("n or p should not be negative");
+		}
+		if(n == 0 && p == 0) {
+			throw new Exception("n and p should not be zero");
+		}
+		return (long) Math.pow(n, p);
 	}
      
 }
