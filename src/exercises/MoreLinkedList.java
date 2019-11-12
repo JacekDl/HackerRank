@@ -1,18 +1,5 @@
 package exercises;
 
-import java.io.*;
-import java.util.*;
-
-class LLNode{
-	int data;
-	LLNode next;
-	
-	LLNode(int d){
-		data = d;
-		next = null;
-	}	
-}
-
 //https://www.hackerrank.com/challenges/30-linked-list-deletion/problem
 public class MoreLinkedList{
 
@@ -20,36 +7,45 @@ public class MoreLinkedList{
 		LLNode current = head;
 		while(current.next != null) {
 			while(current.data == current.next.data) {
-				if(current.next.next != null) current.next = current.next.next;
+				if(current.next.next != null) {
+					current.next = current.next.next;
+				}
 				else {
 					current.next = null;
 					break;
 				}
 			}
-			if(current.next != null) current = current.next;	
+			
+			if(current.next != null) {
+				current = current.next;	
+			}
 		}
 		return head;
 	}
 
 	public static LLNode insert(LLNode head, int data){
 		LLNode p = new LLNode(data);			
-		if(head == null) head = p;
-		else if(head.next == null) head.next = p;
+		if(head == null) {
+			head = p;
+		}
+		else if(head.next == null) {
+			head.next = p;
+		}
 		else{
-			LLNode start = head;
-			while(start.next != null){
-				start = start.next;
+			LLNode current = head;
+			while(current.next != null){
+				current = current.next;
 			}
-			start.next = p;
+			current.next = p;
 		}
 		return head;
 	}
 	
 	public static void display(LLNode head){
-		LLNode start = head;
-		while(start != null){
-			System.out.print(start.data + " ");
-			start = start.next;
+		LLNode current = head;
+		while(current != null){
+			System.out.print(current.data + " ");
+			current = current.next;
 		}
 	}
 	
