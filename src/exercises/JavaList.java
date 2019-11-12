@@ -1,13 +1,14 @@
 package exercises;
 
-import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class JavaList {
 
     public static void main(String[] args) {
     	Scanner sc = new Scanner(System.in);
-    	ArrayList<Integer> values = new ArrayList<Integer>();
+    	List<Integer> values = new ArrayList<Integer>();
     	int numberOfValuesToRead = sc.nextInt();
     	while(numberOfValuesToRead-- > 0) {
     		Integer nextValue = sc.nextInt();
@@ -31,7 +32,9 @@ public class JavaList {
     	}
     	
     	sc.close();
-    	for(Integer i : values) System.out.print(i + " ");
+    	for(Integer i : values) {
+    		System.out.print(i + " ");
+    	}
     }
 }
 
