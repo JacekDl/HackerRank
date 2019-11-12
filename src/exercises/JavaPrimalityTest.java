@@ -1,12 +1,7 @@
 package exercises;
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.math.BigInteger;
+import java.util.Scanner;
 
 
 //https://www.hackerrank.com/challenges/java-primality-test/problem
@@ -15,7 +10,7 @@ public class JavaPrimalityTest {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String myString = "";
+        String myString = scanner.nextLine();
         BigInteger value = new BigInteger(myString);
         boolean answer = value.isProbablePrime(1);
         if(answer) {
