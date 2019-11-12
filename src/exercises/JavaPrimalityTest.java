@@ -15,8 +15,8 @@ public class JavaPrimalityTest {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String n = "";
-        BigInteger value = new BigInteger(n);
+        String myString = "";
+        BigInteger value = new BigInteger(myString);
         boolean answer = value.isProbablePrime(1);
         if(answer) {
         	System.out.print("prime");
