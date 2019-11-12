@@ -4,12 +4,14 @@ package exercises;
 //https://www.hackerrank.com/challenges/java-anagrams/problem
 public class JavaAnagrams {
 
-	static boolean isAnagram(String a, String b) {
+	static boolean isAnagram(String stringA, String stringB) {
 		boolean answer = true;
-		if(a.length() != b.length()) return false;
+		if(stringA.length() != stringB.length()) {
+			return false;
+		}
 		
-		char[] aList = a.toLowerCase().toCharArray();
-		char[] bList = b.toLowerCase().toCharArray();
+		char[] aList = stringA.toLowerCase().toCharArray();
+		char[] bList = stringB.toLowerCase().toCharArray();
 		
 		
 		int[] alphabet = new int[26];
@@ -28,11 +30,11 @@ public class JavaAnagrams {
 		return answer;
 	}
 	
-	private static int indexNumber(char c) {
+	private static int indexNumber(char character) {
 		int answer = -1;
 		char[] abc = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 		for(int i = 0; i < abc.length; i++) {
-			if(abc[i] == c) {
+			if(abc[i] == character) {
 				answer = i;
 				break;
 			}
@@ -46,7 +48,11 @@ public class JavaAnagrams {
 		String b = "margana";
 		
 		boolean anagram = isAnagram(a, b);
-		if(anagram) System.out.println("Anagram");
-		else System.out.println("Not Anagram");
+		if(anagram) {
+			System.out.println("Anagram");
+		}
+		else {
+			System.out.println("Not Anagram");
+		}
 	}
 }
