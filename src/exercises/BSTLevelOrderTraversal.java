@@ -16,8 +16,12 @@ class BSTLevelOrderTraversal{
 		while(!queue.isEmpty()) {
 			Node current = queue.removeFirst();
 			System.out.print(current.data + " ");
-			if(current.left != null) queue.add(current.left);
-			if(current.right != null) queue.add(current.right);
+			if(current.left != null) {
+				queue.add(current.left);
+			}
+			if(current.right != null) {
+				queue.add(current.right);
+			}
 		}
 	}
 
