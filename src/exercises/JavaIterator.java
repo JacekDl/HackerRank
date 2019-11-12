@@ -5,6 +5,8 @@ import java.util.*;
 //https://www.hackerrank.com/challenges/java-iterator/problem
 public class JavaIterator{
 
+	private static Scanner sc;
+
 	static Iterator func(ArrayList mylist){		//returns Iterator
 		Iterator it = mylist.iterator();		//creates new Iterator
 		while(it.hasNext()){
@@ -18,8 +20,9 @@ public class JavaIterator{
    public static void main(String []args){
 	   
 	   //TODO Jacek always put there a type. Raw types are kind of dangerous and makes problems. Read about generics - probably Java 5(?) features.
+	   @SuppressWarnings("rawtypes") //code from HackerRank - list to contain different datatypes --> how it can be done differently?
 	   ArrayList mylist = new ArrayList();
-	   Scanner sc = new Scanner(System.in);
+	   sc = new Scanner(System.in);
 	   int n = sc.nextInt();
 	   int m = sc.nextInt();
 	   for(int i = 0; i < n; i++){		//adds integers to mylist(arraylist)
@@ -30,6 +33,8 @@ public class JavaIterator{
 	   for(int i = 0; i < m; i++){		//adds Strings to mylist(arraylist)
 		   mylist.add(sc.next());
 	   }
+	   
+	   sc.close();
 	   
 	   Iterator it = func(mylist);		//calls function func with mylist parameter which returns iterator
 	   while(it.hasNext()){				
